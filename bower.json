@@ -1,0 +1,24 @@
+{
+  "name": "chuyen-de-11",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Le Xuan Quang <quang.lxun@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/chungpv-1008/20202_IT4435_Chuyen_de_nhom_11",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "roboto-fontface": "^0.10.0",
+    "lato-font": "^3.0.0",
+    "flexisel": "^0.1.1",
+    "bootstrap": "3.1.1",
+    "font-awesome": "4.0.3"
+  }
+}
