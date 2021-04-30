@@ -10,4 +10,9 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-tag
+/public/bower_components
+/public/images
+/public/css
+/public/js
+/public/mix-manifest.json
+/public/ckeditor

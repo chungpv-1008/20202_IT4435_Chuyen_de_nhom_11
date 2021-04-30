@@ -43,7 +43,9 @@
                             </div>
                             <div class="forgot">
                                 <div class="login-check">
-                                    <label class="checkbox1"><input type="checkbox" name="remember" checked=""><i>
+                                    <label class="checkbox1">
+                                        <input type="checkbox" name="remember" checked="false">
+                                        <i>
                                         </i>@lang('login.rememberme')</label>
                                 </div>
                                 <div class="clearfix"> </div>
