@@ -46,7 +46,7 @@ class AdminController extends Controller
         $approveJobs = Job::with(['tags', 'company', 'images'])->where('status', config('job_config.approve'))->get();
         $unapproveJobs = Job::with(['tags', 'company', 'images'])->where('status', config('job_config.unapprove'))->get();
         foreach ($approveJobs as $job) {
-            $image =  $job->images()->firstWhere('type', config('user.avatar'));
+            $image =  $job->company->images()->firstWhere('type', config('user.avatar'));
             if ($image) {
                 $job->url = $image->url;
             } else {
@@ -55,7 +55,7 @@ class AdminController extends Controller
         }
 
         foreach ($unapproveJobs as $job) {
-            $image =  $job->images()->firstWhere('type', config('user.avatar'));
+            $image =  $job->company->images()->firstWhere('type', config('user.avatar'));
             if ($image) {
                 $job->url = $image->url;
             } else {
