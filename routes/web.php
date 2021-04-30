@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::group(['middleware' => 'localization'], function () {
+Route::group(['middleware' => 'localization'], function () {
     Auth::routes();
 
     Route::get('/home', 'HomeController@index')->name('home');
@@ -55,6 +55,6 @@ Route::get('/', function () {
     Route::get('job-by-tag/{id}', 'SearchController@findJobByTag')->name('job_by_tag');
 
     Route::get('update-user/{id}/{status}', 'AdminController@updateUser')->name('update_user');
-// });
+});
 
 Route::get('change-language/{locale}', 'HomeController@changeLanguage')->name('change-language');
