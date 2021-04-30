@@ -1,0 +1,16 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/filter_job.js": "/js/filter_job.js",
+    "/js/home.js": "/js/home.js",
+    "/js/job_history.js": "/js/job_history.js",
+    "/js/list_job.js": "/js/list_job.js",
+    "/js/list_user.js": "/js/list_user.js",
+    "/js/register.js": "/js/register.js",
+    "/js/suitable_job.js": "/js/suitable_job.js",
+    "/css/style.css": "/css/style.css",
+    "/css/register.css": "/css/register.css",
+    "/css/edit_company.css": "/css/edit_company.css",
+    "/css/edit_user.css": "/css/edit_user.css",
+    "/css/user.css": "/css/user.css"
+}

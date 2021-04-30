@@ -1,0 +1,29 @@
+resources(view lang css js) config router controller middleware(admin vs localization) 
+
+app(22)
+    http(13) 
+        controller(7)
+                    admin(user_list,job_list)(3)
+                    application(apply_list,candidate,job_history)(4)
+                    company(company_profile,edit_company)(3)
+                    job(listjob,create_job,job_detail,edit_job)(5)
+                    home(home)(2)
+                    search(search_job,search_company)(3)
+                    user(edit_user,user_profile)(3)
+        middleware(2)
+                    admin,localization
+        request(3)(all)
+        kernel.php(mine)
+    policies(3)(all)
+    provider(mine)(2)
+    repositories(4)(all)
+config(all)
+resources(30)
+            css(5)(all)
+            js(7)(all)
+            lang(all)
+            views(16)
+
+
+admin can't view user profile
+ckeditor
