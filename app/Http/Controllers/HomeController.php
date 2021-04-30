@@ -25,7 +25,7 @@ class HomeController extends Controller
     {
         $allJobs = Job::where('status', config('job_config.approve'))->with('images')->orderBy('created_at', 'desc')->paginate(config('job_config.paginate'));
         foreach ($allJobs as $job) {
-            $job->url =  $job->images()->where('type', config('user.avatar'))->first()->url;
+            $job->url =  $job->company->images()->where('type', config('user.avatar'))->first()->url;
         }
 
         $newJobs = $allJobs->take(config('user.limit'))->all();
@@ -59,7 +59,7 @@ class HomeController extends Controller
                 $suitableJobs = Job::with('images')->whereIn('id', $suitableJobsId)->orderBy('created_at', 'desc')->get();
 
                 foreach ($suitableJobs as $job) {
-                    $job->url =  $job->images()->where('type', config('user.avatar'))->first()->url;
+                    $job->url =  $job->company->images()->where('type', config('user.avatar'))->first()->url;
                 }
 
                 return view('home', compact('allJobs', 'newJobs', 'suitableJobs', 'appliedJobs'));
