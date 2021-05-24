@@ -14,14 +14,14 @@ app(22)
                     admin,localization
         request(3)(all)
         kernel.php(mine)
-    policies(3)(all)
-    provider(mine)(2)
-    repositories(4)(all)
-config(all)
+    policies(3)(all) 1
+    provider(mine)(2) 2
+    repositories(4)(all) 3
+config(all) 
 resources(30)
-            css(5)(all)
-            js(7)(all)
-            lang(all)
+            css(5)(all) 5
+            js(7)(all) 6
+            lang(all) 7
             views(16)
 
 
